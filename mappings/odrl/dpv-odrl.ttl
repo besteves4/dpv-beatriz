@@ -183,7 +183,7 @@ dpv-odrl:RiskMitigationMeasure a odrl:LeftOperand, skos:Concept ;
 dpv-odrl:Location a odrl:LeftOperand, skos:Concept ;
 	skos:exactMatch dpv:Location ;
 	skos:broader odrl:spatial ;
-	skos:note "Only the odrl:eq, odrl:neq, odrl:isAnyOf, and odrl:isNoneOf operators MUST be used."@en .
+	skos:note "Only the odrl:eq, odrl:neq, odrl:isAnyOf, odrl:isNoneOf, odrl:isPartOf and odrl:hasPart operators MUST be used. For the odrl:isPartOf and odrl:hasPart operators, they should be used with the semantic relationships defined in the DPV location extension, that is skos:broader is used to indicate union membership, e.g., Germany being in the EU is defined by the triple loc:DE skos:broader loc:EU, as well as to indicate geographical containment, e.g., Bavaria being a region within Germany is defined by the triple loc:DE-BY skos:broader loc:DE."@en .
 
 # DPV law & legal basis - ODRL left operand mapping #
 
